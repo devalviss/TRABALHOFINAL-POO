@@ -1,10 +1,7 @@
-/*# Onde ficam as listas na memória (ArrayLists)*/
+/* --- ONDE FICAM AS LISTAS NA MEMÓRIA (ArrayLists) --- */
 package repository;
 
-/**
- *
- * @author alves
- */
 public class LogicaSistema {
+    
     
 }

@@ -1,10 +1,6 @@
-/*# Controle financeiro de consultas particulares*/
+/* --- CONTROLE FINANCEIRO DE CONSULTAS PARTICULARES --- */
 package model;
 
-/**
- *
- * @author alves
- */
 public class Conta {
     
 }

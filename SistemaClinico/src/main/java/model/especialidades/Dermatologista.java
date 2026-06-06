@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model.especialidades;
 
-/**
- *
- * @author alves
- */
-public class Dermatologista {
+import model.Medico;
+
+public class Dermatologista extends Medico{
     
+    public Dermatologista(String nome, String login, String senha, String especialidade, double valorBase) {
+        super(nome, login, senha, "DERMATOLOGIA", valorBase);
+    }
+    
+    @Override
+    public boolean aceitaPlanoEspecifico(String plano){
+        // REGRA FICTÍCIA: DERMATOLOGISTAS NÃO ATENDEM PLANOS DO TIPO "UNIMED BRONZE", POR EXEMPLO
+        if(plano.toLowerCase().contains("bronze")){
+            return false;
+        }
+        return super.aceitaPlanoEspecifico(plano);
+    }
+
 }
